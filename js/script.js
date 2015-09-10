@@ -12,16 +12,12 @@ function get_answer(data){
 
     if (answer == 'solero') {
         solero = solero + 1; 
-        console.log('solero');
     } else if (answer == 'topten') {
         topten = topten + 1; 
-        console.log('topten');
     } else if (answer == 'wallscup') {
         wallscup = wallscup + 1; 
-        console.log('wallscup');
     } else if (answer == 'fruttare') {
         fruttare = fruttare + 1; 
-        console.log('fruttare');
     }
 }
 
