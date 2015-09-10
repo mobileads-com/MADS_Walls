@@ -52,18 +52,6 @@ result['topten'] = {
 
 $(document).ready(function(){
 
-    function footerOnTop (indicator) {
-        if (window.innerWidth < 360 || window.innerHeight < 430) {
-            if (indicator === true) {
-                $('.wrapper .footer').css('top', '2px');
-                $('.wrapper .question-box').css('padding', '116px 21px 0');
-            } else {
-                $('.wrapper .footer').css('top', '');
-                $('.wrapper .question-box').css('padding', '96px 21px 0');
-            }
-        }
-    }
-
     $('.start-eng-button').click(function(){
         $('.start-frame').hide();
         $('.malay-questions').hide();
@@ -71,7 +59,6 @@ $(document).ready(function(){
         $('.frame-2').show();
         $('body').addClass('question-body');
 
-        footerOnTop(true);
     });
 
 
@@ -82,7 +69,6 @@ $(document).ready(function(){
         $('.frame-2').show();
         $('body').addClass('question-body');
 
-        footerOnTop(true);
     });
 
 
@@ -98,7 +84,6 @@ $(document).ready(function(){
             
         if(answers.length == 6){
             $(parent).hide();
-            footerOnTop(false);
             $('body').removeClass('question-body');
             $('.result-frame').show();
 
