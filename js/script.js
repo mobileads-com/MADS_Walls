@@ -72,8 +72,10 @@ $(document).ready(function(){
 
     $('.answer-text').click(function(){
         var parent = $(this).parent().parent();
+        $(parent).addClass('animated fadeOutLeft');
         $(parent).hide();
-        $(parent).next(parent).show();
+        $(parent).removeClass('fadeOutLeft');
+        $(parent).next(parent).addClass('animated slideInRight').show();
 
         if(answers.length == 6){
             $('body').removeClass('question-body');
@@ -98,3 +100,4 @@ $(document).ready(function(){
     });
 
 });
+
