@@ -290,8 +290,12 @@ body {
   -o-animation: rotateIn 5s infinite linear;
   animation: rotateIn 5s infinite linear; }
 .wrapper .question-frame {
+    position: absolute;
+    width: 100%;
   display: none; }
 .wrapper .question-box {
+    position: absolute;
+    width: 100%;
   padding: 96px 21px 0; }
   .wrapper .question-box .question-text {
     color: #ef3742;

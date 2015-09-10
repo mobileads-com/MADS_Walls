@@ -4,6 +4,7 @@ var solero = 0;
 var topten = 0;
 var wallscup = 0;
 var fruttare = 0;
+var ans;
 
 function get_answer(data){
     var answer = data.getAttribute('data-answer');
@@ -22,6 +23,7 @@ function get_answer(data){
 }
 
 function setAnswerMsg(finalAnswer) {
+    ans = finalAnswer;
     var result_frame = document.getElementById("result-frame");
     result_frame.className = '';
     result_frame.className = "result-frame " + result[finalAnswer]['class'];
@@ -66,6 +68,20 @@ result['topten'] = {
     text: "The Top Ten is well organized; on occasion you may find a Top Ten that keeps things cluttered, however, they know where everything is. The Top Ten is determined to make the right and best decision. If they make a promise the Top Ten will keep it. Top Tens are creative (and sometimes nutty) people. Top Tens can be hard as chocolate on the outside, but soft like vanilla ice cream on the inside."
 };
 
+var fburl = new Object();
+        
+fburl['solero'] = 'https://www.facebook.com/sharer/sharer.php?u=https://rmarepo.richmediaads.com/2754/walls/fb/en/solero.html&title=YOU ARE SOLERO!';
+fburl['fruttare'] = 'https://www.facebook.com/sharer/sharer.php?u=https://rmarepo.richmediaads.com/2754/walls/fb/en/fruttare.html&title=YOU ARE Fruttare!';
+fburl['wallscup'] = 'https://www.facebook.com/sharer/sharer.php?u=https://rmarepo.richmediaads.com/2754/walls/fb/en/wallscup.html&title=YOU ARE Wall\'s CUP!';
+fburl['topten'] = 'https://www.facebook.com/sharer/sharer.php?u=https://rmarepo.richmediaads.com/2754/walls/fb/en/topten.html&title=YOU ARE Top Ten!';
+
+var twurl = new Object();
+        
+twurl['solero'] = 'https://twitter.com/intent/tweet?original_referer=https://rmarepo.richmediaads.com/2754/walls/fb/en/solero.html&text=YOU ARE SOLERO!&tw_p=tweetbutton&url=https://rmarepo.richmediaads.com/2754/walls/fb/en/solero.html';
+twurl['fruttare'] = 'https://twitter.com/intent/tweet?original_referer=https://rmarepo.richmediaads.com/2754/walls/fb/en/fruttare.html&text=YOU ARE Fruttare!&tw_p=tweetbutton&url=https://rmarepo.richmediaads.com/2754/walls/fb/en/fruttare.html';
+twurl['wallscup'] = 'https://twitter.com/intent/tweet?original_referer=https://rmarepo.richmediaads.com/2754/walls/fb/en/wallscup.html&text=YOU ARE Wall\'s CUP!&tw_p=tweetbutton&url=https://rmarepo.richmediaads.com/2754/walls/fb/en/wallscup.html';
+twurl['topten'] = 'https://twitter.com/intent/tweet?original_referer=https://rmarepo.richmediaads.com/2754/walls/fb/en/topten.html&text=YOU ARE Top Ten!&tw_p=tweetbutton&url=https://rmarepo.richmediaads.com/2754/walls/fb/en/topten.html';
+
 $(document).ready(function(){
 
     $('.start-eng-button').click(function(){
@@ -91,12 +107,10 @@ $(document).ready(function(){
     $('.answer-text').click(function(){
         var parent = $(this).parent().parent();
         $(parent).addClass('animated slideOutLeft');
+     
         setTimeout(function() {
-            $(parent).hide();
-            $(parent).removeClass('slideOutLeft slideInRight');
-
             $(parent).next(parent).addClass('animated slideInRight').show();
-        }, 700);
+        }, 100);
             
         if(answers.length == 6){
             $(parent).hide();
@@ -143,6 +157,16 @@ $(document).ready(function(){
         answers = [];
         $('.result-frame').hide();
         $('.start-frame').show();
+    });
+    
+    $('.facebook-button').on('click', function () {
+        
+        window.open( fburl[ans] );
+    });
+    
+    $('.twitter-button').on('click', function () {
+
+        window.open( twurl[ans] );
     });
 
 });
