@@ -74,13 +74,13 @@ $(document).ready(function(){
 
     $('.answer-text').click(function(){
         var parent = $(this).parent().parent();
-            $(parent).addClass('animated slideOutLeft');
-            setTimeout(function() {
-                $(parent).hide();
-                $(parent).removeClass('slideOutLeft slideInRight');
+        $(parent).addClass('animated slideOutLeft');
+        setTimeout(function() {
+            $(parent).hide();
+            $(parent).removeClass('slideOutLeft slideInRight');
 
-                $(parent).next(parent).addClass('animated slideInRight').show();
-            }, 700);
+            $(parent).next(parent).addClass('animated slideInRight').show();
+        }, 700);
             
         if(answers.length == 6){
             $(parent).hide();
