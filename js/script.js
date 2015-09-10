@@ -88,10 +88,13 @@ $(document).ready(function(){
 
     $('.answer-text').click(function(){
         var parent = $(this).parent().parent();
-        $(parent).addClass('animated fadeOutLeft');
-        $(parent).hide();
-        $(parent).removeClass('fadeOutLeft');
-        $(parent).next(parent).addClass('animated slideInRight').show();
+        
+        $(parent).addClass('animated slideOutLeft');
+        setTimeout(function() {
+            $(parent).hide();
+            $(parent).next(parent).addClass('animated slideInRight').show();
+
+        }, 700);
 
         if(answers.length == 6){
             footerOnTop(false);
