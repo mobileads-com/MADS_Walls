@@ -1,21 +1,41 @@
 
 var answers = [];
+var solero = 0;
+var topten = 0;
+var wallscup = 0;
+var fruttare = 0;
 
 function get_answer(data){
     var answer = data.getAttribute('data-answer');
     answers.push(answer);
 
-    var count = answers.length;
-    if(count == 6){
 
-        var counts = {};
-
-        for(var i=0;i< answers.length; i++)
-        {
-            var key = answers[i];
-            counts[key] = (counts[key])? counts[key] + 1 : 1 ;
-        }
+    if (answer == 'solero') {
+        solero = solero + 1; 
+        console.log('solero');
+    } else if (answer == 'topten') {
+        topten = topten + 1; 
+        console.log('topten');
+    } else if (answer == 'wallscup') {
+        wallscup = wallscup + 1; 
+        console.log('wallscup');
+    } else if (answer == 'fruttare') {
+        fruttare = fruttare + 1; 
+        console.log('fruttare');
     }
+}
+
+function setAnswerMsg(finalAnswer) {
+    var result_frame = document.getElementById("result-frame");
+    result_frame.className = '';
+    result_frame.className = "result-frame " + result[finalAnswer]['class'];
+    document.getElementById("result-bubble-text").innerHTML = result[finalAnswer]['bubble_text'];
+    document.getElementById("result-caption").innerHTML = result[finalAnswer]['caption'];
+    document.getElementById("result-text").innerHTML = result[finalAnswer]['text'];
+}
+
+function pickOne() {
+    return Math.floor(Math.random() * 2) + 1;
 }
 
 
@@ -87,21 +107,40 @@ $(document).ready(function(){
             $('body').removeClass('question-body');
             $('.result-frame').show();
 
-            var rand_result = ['solero', 'fruttare', 'wallscup', 'topten'];
-            var rand = Math.floor(Math.random() * rand_result.length);
-            rand = rand_result[rand];
+            if (solero > topten && solero > wallscup && solero > fruttare) {
+                setAnswerMsg('solero');
+            } else if (topten > solero && topten > wallscup && topten > fruttare) {
+                setAnswerMsg('topten');
+            } else if (wallscup > solero && wallscup > topten && wallscup > fruttare) {
+                setAnswerMsg('wallscup');
+            } else if (fruttare > solero && fruttare > topten && fruttare > wallscup) {
+                setAnswerMsg('fruttare');
+            } else {
+                if (solero == topten) {
+                    var pickedAnswer = ['solero', 'topten'];
+                    setAnswerMsg(pickedAnswer[pickOne()]);
+                } else if (solero == wallscup) {
+                    var pickedAnswer = ['solero', 'wallscup'];
+                    setAnswerMsg(pickedAnswer[pickOne()]);
+                } else if (solero == fruttare) {
+                    var pickedAnswer = ['solero', 'frutarre'];
+                    setAnswerMsg(pickedAnswer[pickOne()]);
+                } else if (topten == wallscup) {
+                    var pickedAnswer = ['topten', 'wallscup'];
+                    setAnswerMsg(pickedAnswer[pickOne()]);
+                } else if (topten == frutarre) {
+                    var pickedAnswer = ['topten', 'fruttare'];
+                    setAnswerMsg(pickedAnswer[pickOne()]);
+                } else if (wallscup == fruttare) {
+                    var pickedAnswer = ['wallscup', 'fruttare'];
+                    setAnswerMsg(pickedAnswer[pickOne()]);
+                } else {
+                    var pickedAnswer = ['solero', 'topten', 'wallscup', 'frutarre'];
+                    setAnswerMsg(pickedAnswer[pickOne()]);
+                }
+            }
 
-            var result_frame = document.getElementById("result-frame");
-            result_frame.className = '';
-            result_frame.className = "result-frame " + result[rand]['class'];
-            document.getElementById("result-bubble-text").innerHTML = result[rand]['bubble_text'];
-            document.getElementById("result-caption").innerHTML = result[rand]['caption'];
-            document.getElementById("result-text").innerHTML = result[rand]['text'];
-        } else {
-        
-
-
-        }
+        } 
     });
 
     $('.try-button').click(function(){
