@@ -1,0 +1,206 @@
+﻿
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>What's your ice-cream personality?</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <meta property="og:url"         content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html" />
+    <meta property="og:type"        content="article" />
+    <meta property="og:title"       content="When Great Minds Don’t Think Alike" />
+    <meta property="og:description" content="How much does culture influence creative thinking?" />
+    <meta property="og:image"       content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="absolute header"></div>
+
+
+    <div class="start-frame">
+        <div class="absolute bubble-right">
+            <p class="english">what's your ice-cream personality?</p>
+            <p class="malay">Apakah personaliti aiskrim anda?</p>
+        </div>
+        <div class="absolute all-ice-cream"></div>
+        <div class="absolute button-default start-eng-button">
+            <p class="english">start quiz in english</p>
+            <p class="malay">mula kuis dalam bahasa inggeris</p>
+        </div>
+        <div class="absolute button-default start-malay-button">
+            <p class="english">start quiz in malay</p>
+            <p class="malay">mula kuis dalam bahasa melayu</p>
+        </div>
+    </div>
+
+
+
+    <div class="english-questions">
+        <div class="frame-2 question-frame">
+            <div class="question-box">
+                <div class="question-text">There's a party tonight, what do you wear?</div>
+                <div class="answer-text button-default" data-answer="solero" onclick="get_answer(this)">The new thing you just bought</div>
+                <div class="answer-text button-default" data-answer="topten" onclick="get_answer(this)">Keep it simple, jeans and a top</div>
+                <div class="answer-text button-default" data-answer="wallscup" onclick="get_answer(this)">Relaxation over looks! Something easy and comfortable</div>
+                <div class="answer-text button-default" data-answer="fruttare" onclick="get_answer(this)">A funky sweater and jeans, vintage and unusual</div>
+            </div>
+        </div>
+
+        <div class="frame-3 question-frame">
+            <div class="question-box">
+                <div class="question-text">What do you like most about yourself?</div>
+                <div class="answer-text button-default" data-answer="solero" onclick="get_answer(this)">Your independence</div>
+                <div class="answer-text button-default" data-answer="wallscup" onclick="get_answer(this)">Your compassion</div>
+                <div class="answer-text button-default" data-answer="topten" onclick="get_answer(this)">Your loyalty</div>
+                <div class="answer-text button-default" data-answer="fruttare" onclick="get_answer(this)">Your loyalty</div>
+            </div>
+        </div>
+
+        <div class="frame-4 question-frame">
+            <div class="question-box">
+                <div class="question-text">Happy birthday! Your ideal party is…</div>
+                <div class="answer-text button-default" data-answer="solero" onclick="get_answer(this)">A surprise party!</div>
+                <div class="answer-text button-default" data-answer="topten" onclick="get_answer(this)">Anything fun, as long as you get to plan it</div>
+                <div class="answer-text button-default" data-answer="wallscup" onclick="get_answer(this)">A pool, beach, or dance party: Lots of people, loud music</div>
+                <div class="answer-text button-default" data-answer="fruttare" onclick="get_answer(this)">Your closest friends, out to a coffee shop, then to a spa</div>
+            </div>
+        </div>
+
+        <div class="frame-5 question-frame">
+            <div class="question-box">
+                <div class="question-text">You walk into a party full of people. You usually…</div>
+                <div class="answer-text button-default" data-answer="wallscup" onclick="get_answer(this)">…find people you know well and who share your interests</div>
+                <div class="answer-text button-default" data-answer="solero" onclick="get_answer(this)">…find one person and converse or organize a big game for all to play</div>
+                <div class="answer-text button-default" data-answer="topten" onclick="get_answer(this)">…wait for others to come to you</div>
+                <div class="answer-text button-default" data-answer="fruttare" onclick="get_answer(this)">…find the largest group of people and become the center of the conversation</div>
+            </div>
+        </div>
+
+        <div class="frame-6 question-frame">
+            <div class="question-box">
+                <div class="question-text">How would your friends describe you?</div>
+                <div class="answer-text button-default" data-answer="wallscup" onclick="get_answer(this)">Easy-going</div>
+                <div class="answer-text button-default" data-answer="fruttare" onclick="get_answer(this)">Charismatic and fun</div>
+                <div class="answer-text button-default" data-answer="topten" onclick="get_answer(this)">Sensitive</div>
+                <div class="answer-text button-default" data-answer="solero" onclick="get_answer(this)">The leader of the group</div>
+            </div>
+        </div>
+
+        <div class="frame-7 question-frame">
+            <div class="question-box">
+                <div class="question-text">You can take a vacation to one of these places, which one is most appealing?</div>
+                <div class="answer-text button-default" data-answer="solero" onclick="get_answer(this)">A trek through Taman Negara. Bring on the adventure!</div>
+                <div class="answer-text button-default" data-answer="topten" onclick="get_answer(this)">Cameron Highlands. A place of solitude and peace</div>
+                <div class="answer-text button-default" data-answer="wallscup" onclick="get_answer(this)">Perhaps a spa or Redang beach. A relaxing getaway</div>
+                <div class="answer-text button-default" data-answer="fruttare" onclick="get_answer(this)">Kuala Lumpur. Let's see the sights, taste the cuisine, I just hope I can fit it all in during one trip!</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="malay-questions">
+        <div class="frame-2 question-frame">
+            <div class="question-box">
+                <div class="question-text">Ada parti malam ini, apa anda nak pakai?</div>
+                <div class="answer-text button-default" data-answer="solero" onclick="get_answer(this)">Pakaian yang anda baru beli</div>
+                <div class="answer-text button-default" data-answer="topten" onclick="get_answer(this)">Pakai sahaja jeans dan baju yang ringkas</div>
+                <div class="answer-text button-default" data-answer="wallscup" onclick="get_answer(this)">Pakaian yang senang dan santai asalkan selesa walaupun kelihatan biasa</div>
+                <div class="answer-text button-default" data-answer="fruttare" onclick="get_answer(this)">Pakaian yang ganjil dan pelik; jeans serta baju yang ranggi</div>
+            </div>
+        </div>
+
+        <div class="frame-3 question-frame">
+            <div class="question-box">
+                <div class="question-text">Apakah yang paling anda suka tentang diri anda?</div>
+                <div class="answer-text button-default" data-answer="solero" onclick="get_answer(this)">Kebebasan anda</div>
+                <div class="answer-text button-default" data-answer="wallscup" onclick="get_answer(this)">Sikap belas kasihan anda</div>
+                <div class="answer-text button-default" data-answer="topten" onclick="get_answer(this)">Kesetiaan anda</div>
+                <div class="answer-text button-default" data-answer="fruttare" onclick="get_answer(this)">Sikap spontan anda</div>
+            </div>
+        </div>
+
+        <div class="frame-4 question-frame">
+            <div class="question-box">
+                <div class="question-text">Selamat hari lahir! Parti Parti idaman anda ialah…</div>
+                <div class="answer-text button-default" data-answer="solero" onclick="get_answer(this)">Parti kejutan</div>
+                <div class="answer-text button-default" data-answer="topten" onclick="get_answer(this)">Apa sahaja yang menarik, asalkan anda dapat merancangnya</div>
+                <div class="answer-text button-default" data-answer="wallscup" onclick="get_answer(this)">Parti di kolam, pantai atau parti tari menari: Ramai orang dengan muzik yang kuat</div>
+                <div class="answer-text button-default" data-answer="fruttare" onclick="get_answer(this)">Keluar minum kopi dan ke spa dengan kawan anda yang paling rapat</div>
+            </div>
+        </div>
+
+        <div class="frame-5 question-frame">
+            <div class="question-box">
+                <div class="question-text">Anda pergi ke parti yang penuh dengan orang. Anda biasanya…</div>
+                <div class="answer-text button-default" data-answer="wallscup" onclick="get_answer(this)">…mencari seseorang yang anda sangat kenal dan mempunyai minat yang sama</div>
+                <div class="answer-text button-default" data-answer="solero" onclick="get_answer(this)">…cari seseorang untuk berbual atau merancang permainan yang hebat untuk semua</div>
+                <div class="answer-text button-default" data-answer="topten" onclick="get_answer(this)">…tunggu sehingga orang lain datang kepada anda</div>
+                <div class="answer-text button-default" data-answer="fruttare" onclick="get_answer(this)">…mencari satu kumpulan yang paling besar dan anda mengawal perbualan</div>
+            </div>
+        </div>
+
+        <div class="frame-6 question-frame">
+            <div class="question-box">
+                <div class="question-text">Bagaimana rakan–rakan anda menggambarkan anda?</div>
+                <div class="answer-text button-default" data-answer="wallscup" onclick="get_answer(this)">Mudah bergaul</div>
+                <div class="answer-text button-default" data-answer="fruttare" onclick="get_answer(this)">Berkarisma dan menyeronokkan</div>
+                <div class="answer-text button-default" data-answer="topten" onclick="get_answer(this)">Sensitif</div>
+                <div class="answer-text button-default" data-answer="solero" onclick="get_answer(this)">Ketua kumpulan</div>
+            </div>
+        </div>
+
+        <div class="frame-7 question-frame">
+            <div class="question-box">
+                <div class="question-text">anda berPeluang melancong ke salah satu dari tempat–tempat berikut, yang mana satukah yang paling menarik?</div>
+                <div class="answer-text button-default" data-answer="solero" onclick="get_answer(this)">Menjelajah Taman Negara. Hayatilah pengembaraannya!</div>
+                <div class="answer-text button-default" data-answer="topten" onclick="get_answer(this)">Mungkin spa atau pulau Redang. Percutian yang menenangkan</div>
+                <div class="answer-text button-default" data-answer="wallscup" onclick="get_answer(this)">Mungkin spa atau pulau Redang. Percutian yang menenangkan</div>
+                <div class="answer-text button-default" data-answer="fruttare" onclick="get_answer(this)">Kuala Lumpur. Pemandangan yang indah serta makanan yang lazat</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="result-frame" id="result-frame">
+        <div class="absolute bubble-left">
+            <p id="result-bubble-text"></p>
+        </div>
+        <div class="absolute result-ice-cream"></div>
+
+        <div class="result-text">
+            <div class="caption" id="result-caption"></div>
+            <p class="text" id="result-text"></p>
+        </div>
+
+        <div class="share-box">
+            <p>share</p>
+            <a href="#" class="button-default share-button"><span class="facebook"></span></a>
+            <a href="#" class="button-default share-button"><span class="twitter"></span></a>
+        </div>
+
+        <div class="button-default try-button">try again</div>
+        <a href="http://www.walls.com.my/" target="_blank" class="button-default find-button">find out more</a>
+    </div>
+
+
+    <div class="absolute footer"></div>
+</div>
+
+
+<!-- jQuery library -->
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
