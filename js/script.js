@@ -88,15 +88,9 @@ $(document).ready(function(){
 
     $('.answer-text').click(function(){
         var parent = $(this).parent().parent();
-        
-        $(parent).addClass('animated slideOutLeft');
-        setTimeout(function() {
-            $(parent).hide();
-            $(parent).next(parent).addClass('animated slideInRight').show();
-
-        }, 700);
 
         if(answers.length == 6){
+            $(parent).hide();
             footerOnTop(false);
             $('body').removeClass('question-body');
             $('.result-frame').show();
@@ -111,6 +105,15 @@ $(document).ready(function(){
             document.getElementById("result-bubble-text").innerHTML = result[rand]['bubble_text'];
             document.getElementById("result-caption").innerHTML = result[rand]['caption'];
             document.getElementById("result-text").innerHTML = result[rand]['text'];
+        } else {
+        
+            $(parent).addClass('animated slideOutLeft');
+            setTimeout(function() {
+                $(parent).hide();
+                $(parent).next(parent).addClass('animated slideInRight').show();
+
+            }, 700);
+
         }
     });
 
