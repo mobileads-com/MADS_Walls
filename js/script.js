@@ -103,7 +103,8 @@ $(document).ready(function(){
             rand = rand_result[rand];
 
             var result_frame = document.getElementById("result-frame");
-            result_frame.className = result_frame.className + " " + result[rand]['class'];
+            result_frame.className = '';
+            result_frame.className = "result-frame " + result[rand]['class'];
             document.getElementById("result-bubble-text").innerHTML = result[rand]['bubble_text'];
             document.getElementById("result-caption").innerHTML = result[rand]['caption'];
             document.getElementById("result-text").innerHTML = result[rand]['text'];
