@@ -7,8 +7,7 @@ var fruttare = 0;
 var ans;
 var language = '_en';
 
-function get_answer(data){
-    var answer = data.getAttribute('data-answer');
+function get_answer(answer){
     answers.push(answer);
 
 
@@ -26,15 +25,15 @@ function get_answer(data){
 function setAnswerMsg(finalAnswer) {
     ans = finalAnswer;
     var result_frame = document.getElementById("result-frame");
-    result_frame.className = ''; 
+    result_frame.className = '';
     result_frame.className = "result-frame " + result[finalAnswer+language]['class'];
     document.getElementById("result-bubble-text").innerHTML = result[finalAnswer+language]['bubble_text'];
     document.getElementById("result-caption").innerHTML = result[finalAnswer+language]['caption'];
     document.getElementById("result-text").innerHTML = result[finalAnswer+language]['text'];
 }
 
-function pickOne() {
-    return Math.floor(Math.random() * 2) + 1;
+function pickOne(max) {
+    return Math.floor(Math.random() * max);
 }
 
 
@@ -95,28 +94,28 @@ result['topten_bm'] = {
 var fburl = new Object();
 /* English */        
 fburl['solero_en'] = 'https://www.facebook.com/sharer/sharer.php?u=http://bit.ly/1K0Lejd&title=YOU ARE SOLERO!';
-fburl['fruttare_en'] = 'https://www.facebook.com/sharer/sharer.php?u=http://bit.ly/1Nl5WMQ&title=YOU ARE Fruttare!';
-fburl['wallscup_en'] = 'https://www.facebook.com/sharer/sharer.php?u=http://bit.ly/1K0LcIf&title=YOU ARE Wall\'s CUP!';
-fburl['topten_en'] = 'https://www.facebook.com/sharer/sharer.php?u=http://bit.ly/1iB1uhM&title=YOU ARE Top Ten!';
+fburl['fruttare_en'] = 'https://www.facebook.com/sharer/sharer.php?u=http://bit.ly/1Nl5WMQ&title=YOU ARE FRUTTARE!';
+fburl['wallscup_en'] = 'https://www.facebook.com/sharer/sharer.php?u=http://bit.ly/1K0LcIf&title=YOU ARE WALL\'s CUP!';
+fburl['topten_en'] = 'https://www.facebook.com/sharer/sharer.php?u=http://bit.ly/1iB1uhM&title=YOU ARE TOP TEN!';
 /* Malay */
-fburl['solero_bm'] = 'https://www.facebook.com/sharer/sharer.php?u=http://bit.ly/1UKqMpw&title=YOU ARE SOLERO!';
-fburl['fruttare_bm'] = 'https://www.facebook.com/sharer/sharer.php?u=http://bit.ly/1Q552DF&title=YOU ARE Fruttare!';
-fburl['wallscup_bm'] = 'https://www.facebook.com/sharer/sharer.php?u=http://bit.ly/1ER9dlY&title=YOU ARE Wall\'s CUP!';
-fburl['topten_bm'] = 'https://www.facebook.com/sharer/sharer.php?u=http://bit.ly/1KdZgza&title=YOU ARE Top Ten!';
+fburl['solero_bm'] = 'https://www.facebook.com/sharer/sharer.php?u=http://bit.ly/1UKqMpw&title=ANDA ADALAH SOLERO!';
+fburl['fruttare_bm'] = 'https://www.facebook.com/sharer/sharer.php?u=http://bit.ly/1Q552DF&title=ANDA ADALAH FRUTTARE!';
+fburl['wallscup_bm'] = 'https://www.facebook.com/sharer/sharer.php?u=http://bit.ly/1ER9dlY&title=ANDA ADALAH AISKIRIM CAWAN WALL\'S!';
+fburl['topten_bm'] = 'https://www.facebook.com/sharer/sharer.php?u=http://bit.ly/1KdZgza&title=ANDA ADALAH TOP TEN!';
 
 
 /* Twitter share url */
 var twurl = new Object();
 /* English */     
 twurl['solero_en'] = 'https://twitter.com/intent/tweet?original_referer=http://bit.ly/1K0Lejd&text=YOU ARE SOLERO!&tw_p=tweetbutton&url=http://bit.ly/1K0Lejd';
-twurl['fruttare_en'] = 'https://twitter.com/intent/tweet?original_referer=http://bit.ly/1Nl5WMQ&text=YOU ARE Fruttare!&tw_p=tweetbutton&url=http://bit.ly/1Nl5WMQ';
-twurl['wallscup_en'] = 'https://twitter.com/intent/tweet?original_referer=http://bit.ly/1K0LcIf&text=YOU ARE Wall\'s CUP!&tw_p=tweetbutton&url=http://bit.ly/1K0LcIf';
-twurl['topten_en'] = 'https://twitter.com/intent/tweet?original_referer=http://bit.ly/1iB1uhM&text=YOU ARE Top Ten!&tw_p=tweetbutton&url=http://bit.ly/1iB1uhM';
+twurl['fruttare_en'] = 'https://twitter.com/intent/tweet?original_referer=http://bit.ly/1Nl5WMQ&text=YOU ARE FRUTTARE!&tw_p=tweetbutton&url=http://bit.ly/1Nl5WMQ';
+twurl['wallscup_en'] = 'https://twitter.com/intent/tweet?original_referer=http://bit.ly/1K0LcIf&text=YOU ARE WALL\'S CUP!&tw_p=tweetbutton&url=http://bit.ly/1K0LcIf';
+twurl['topten_en'] = 'https://twitter.com/intent/tweet?original_referer=http://bit.ly/1iB1uhM&text=YOU ARE TOP TEN!&tw_p=tweetbutton&url=http://bit.ly/1iB1uhM';
 /* Malay */
-twurl['solero_bm'] = 'https://twitter.com/intent/tweet?original_referer=http://bit.ly/1UKqMpw&text=YOU ARE SOLERO!&tw_p=tweetbutton&url=http://bit.ly/1UKqMpw';
-twurl['fruttare_bm'] = 'https://twitter.com/intent/tweet?original_referer=http://bit.ly/1Q552DF&text=YOU ARE Fruttare!&tw_p=tweetbutton&url=http://bit.ly/1Q552DF';
-twurl['wallscup_bm'] = 'https://twitter.com/intent/tweet?original_referer=http://bit.ly/1ER9dlY&text=YOU ARE Wall\'s CUP!&tw_p=tweetbutton&url=http://bit.ly/1ER9dlY';
-twurl['topten_bm'] = 'https://twitter.com/intent/tweet?original_referer=http://bit.ly/1KdZgza&text=YOU ARE Top Ten!&tw_p=tweetbutton&url=http://bit.ly/1KdZgza';
+twurl['solero_bm'] = 'https://twitter.com/intent/tweet?original_referer=http://bit.ly/1UKqMpw&text=ANDA ADALAH SOLERO!&tw_p=tweetbutton&url=http://bit.ly/1UKqMpw';
+twurl['fruttare_bm'] = 'https://twitter.com/intent/tweet?original_referer=http://bit.ly/1Q552DF&text=ANDA ADALAH FRUTTARE!&tw_p=tweetbutton&url=http://bit.ly/1Q552DF';
+twurl['wallscup_bm'] = 'https://twitter.com/intent/tweet?original_referer=http://bit.ly/1ER9dlY&text=ANDA ADALAH AISKIRIM CAWAN WALL\'S!&tw_p=tweetbutton&url=http://bit.ly/1ER9dlY';
+twurl['topten_bm'] = 'https://twitter.com/intent/tweet?original_referer=http://bit.ly/1KdZgza&text=ANDA ADALAH TOP TEN!&tw_p=tweetbutton&url=http://bit.ly/1KdZgza';
 
 $(document).ready(function(){
 
@@ -144,15 +143,23 @@ $(document).ready(function(){
         $('body').addClass('question-body');
 
     });
-
-
-    $('.answer-text').click(function(){
+    
+    var ans_text = function(){
+        $('.answer-text').off();
+        
+        var answer = $(this).data('answer');
+        get_answer(answer);
+        
         var parent = $(this).parent().parent();
         $(parent).addClass('animated slideOutLeft');
      
         setTimeout(function() {
             $(parent).next(parent).addClass('animated slideInRight').show();
         }, 100);
+        
+        setTimeout(function() {
+            $('.answer-text').on('click', ans_text);
+        }, 1000);
             
         if(answers.length == 6){
             $(parent).hide();
@@ -168,36 +175,44 @@ $(document).ready(function(){
             } else if (fruttare > solero && fruttare > topten && fruttare > wallscup) {
                 setAnswerMsg('fruttare');
             } else {
-                if (solero == topten) {
+                if (solero == topten && solero != 0) {
                     var pickedAnswer = ['solero', 'topten'];
-                    setAnswerMsg(pickedAnswer[pickOne()]);
-                } else if (solero == wallscup) {
+                    setAnswerMsg(pickedAnswer[pickOne(pickedAnswer.length)]);
+                } else if (solero == wallscup && solero != 0) {
                     var pickedAnswer = ['solero', 'wallscup'];
-                    setAnswerMsg(pickedAnswer[pickOne()]);
-                } else if (solero == fruttare) {
+                    setAnswerMsg(pickedAnswer[pickOne(pickedAnswer.length)]);
+                } else if (solero == fruttare && solero != 0) {
                     var pickedAnswer = ['solero', 'fruttare'];
-                    setAnswerMsg(pickedAnswer[pickOne()]);
-                } else if (topten == wallscup) {
+                    setAnswerMsg(pickedAnswer[pickOne(pickedAnswer.length)]);
+                } else if (topten == wallscup && topten != 0) {
                     var pickedAnswer = ['topten', 'wallscup'];
-                    setAnswerMsg(pickedAnswer[pickOne()]);
-                } else if (topten == fruttare) {
+                    setAnswerMsg(pickedAnswer[pickOne(pickedAnswer.length)]);
+                } else if (topten == fruttare && topten != 0) {
                     var pickedAnswer = ['topten', 'fruttare'];
-                    setAnswerMsg(pickedAnswer[pickOne()]);
-                } else if (wallscup == fruttare) {
+                    setAnswerMsg(pickedAnswer[pickOne(pickedAnswer.length)]);
+                } else if (wallscup == fruttare && wallscup != 0) {
                     var pickedAnswer = ['wallscup', 'fruttare'];
-                    setAnswerMsg(pickedAnswer[pickOne()]);
+                    setAnswerMsg(pickedAnswer[pickOne(pickedAnswer.length)]);
                 } else {
                     var pickedAnswer = ['solero', 'topten', 'wallscup', 'fruttare'];
-                    setAnswerMsg(pickedAnswer[pickOne()]);
+                    setAnswerMsg(pickedAnswer[pickOne(pickedAnswer.length)]);
                 }
             }
 
         } 
-    });
+    };
+
+
+    $('.answer-text').on('click', ans_text);
 
     $('.try-button').click(function(){
         answers = [];
         
+        solero = 0;
+        topten = 0;
+        wallscup = 0;
+        fruttare = 0;
+
         $('.question-frame').removeClass('animated slideInRight slideOutLeft').hide();
         
         $('.result-frame').hide();
