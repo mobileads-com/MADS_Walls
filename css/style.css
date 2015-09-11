@@ -419,3 +419,7 @@ body {
   animation: fadeOut 1.5s ease-in-out; }
 
 /*# sourceMappingURL=style.css.map */
+
+.result-button-en, .result-button-bm {
+    display: none;
+}
