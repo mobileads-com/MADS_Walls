@@ -1,4 +1,88 @@
+/*
+*
+* mads - version 2.00.01  
+* Copyright (c) 2015, Ninjoe
+* Dual licensed under the MIT or GPL Version 2 licenses.
+* https://en.wikipedia.org/wiki/MIT_License
+* https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
+*
+*/
+var mads = function () {
+    /* Get Tracker */
+    if (typeof custTracker == 'undefined' && typeof rma != 'undefined') {
+        this.custTracker = rma.customize.custTracker;
+    } else if (typeof custTracker != 'undefined') {
+        this.custTracker = custTracker;
+    } else {
+        this.custTracker = [];
+    }
+    
+    /* Unique ID on each initialise */
+    this.id = this.uniqId();
+    
+    /* Tracked tracker */
+    this.tracked = [];
+    
+    /* Body Tag */
+    this.bodyTag = document.getElementsByTagName('body')[0];
+    
+    /* Head Tag */
+    this.headTag = document.getElementsByTagName('head')[0];
+    
+    /* RMA Widget - Content Area */
+    this.contentTag = document.getElementById('rma-widget');
+    
+    /* URL Path */
+    this.path = typeof rma != 'undefined' ? rma.customize.src : '';
+};
 
+/* Generate unique ID */
+mads.prototype.uniqId = function () {
+    
+    return new Date().getTime();
+}
+
+/* Link Opner */
+mads.prototype.linkOpener = function (url) {
+
+	if(typeof url != "undefined" && url !=""){
+		if (typeof mraid !== 'undefined') {
+			mraid.open(url);
+		}else{
+			window.open(url);
+		}
+	}
+}
+
+/* tracker */
+mads.prototype.tracker = function (tt, type, name) { 
+    /* 
+    * name is used to make sure that particular tracker is tracked for only once 
+    * there might have the same type in different location, so it will need the name to differentiate them
+    */
+    name = name || type; 
+    
+    if ( typeof this.custTracker != 'undefined' && this.custTracker != '' && this.tracked.indexOf(name) == -1 ) {
+        for (var i = 0; i < this.custTracker.length; i++) {
+            var img = document.createElement('img');
+            
+            /* Insert Macro */
+            var src = this.custTracker[i].replace('{{type}}', type);
+            src = src.replace('{{tt}}', tt);
+            /* */
+            img.src = src + '&' + this.id;
+            
+            img.style.display = 'none';
+            this.bodyTag.appendChild(img);
+            
+            this.tracked.push(name);
+        }
+    }
+};
+
+
+
+var madsApp = new mads();
 var answers = [];
 var solero = 0;
 var topten = 0;
@@ -9,7 +93,6 @@ var language = '_en';
 
 function get_answer(answer){
     answers.push(answer);
-
 
     if (answer == 'solero') {
         solero = solero + 1; 
@@ -23,6 +106,10 @@ function get_answer(answer){
 }
 
 function setAnswerMsg(finalAnswer) {
+    
+    /* Tracker */
+    madsApp.tracker('E','result'+finalAnswer);
+    
     ans = finalAnswer;
     var result_frame = document.getElementById("result-frame");
     result_frame.className = '';
@@ -120,6 +207,10 @@ twurl['topten_bm'] = 'https://twitter.com/intent/tweet?original_referer=http://b
 $(document).ready(function(){
 
     $('.start-eng-button').click(function(){
+        
+        /* Tracker */
+        madsApp.tracker('E','startenglish');
+        
         language = '_en';
         $('.start-frame').hide();
         $('.malay-questions').hide();
@@ -133,6 +224,10 @@ $(document).ready(function(){
 
 
     $('.start-malay-button').click(function(){
+        
+        /* Tracker */
+        madsApp.tracker('E','startmalay');
+        
         language = '_bm';
         $('.start-frame').hide();
         $('.english-questions').hide();
@@ -206,6 +301,9 @@ $(document).ready(function(){
     $('.answer-text').on('click', ans_text);
 
     $('.try-button').click(function(){
+        /* Tracker */
+        madsApp.tracker('E','tryagain');
+        
         answers = [];
         
         solero = 0;
@@ -221,12 +319,26 @@ $(document).ready(function(){
     
     $('.facebook-button').on('click', function () {
         
-        window.open( fburl[ans+language] );
+        /* Tracker */
+        madsApp.tracker('E','facebook');
+        
+        madsApp.linkOpener( fburl[ans+language] );
     });
     
     $('.twitter-button').on('click', function () {
+        
+        /* Tracker */
+        madsApp.tracker('E','twitter');
 
-        window.open( twurl[ans+language] );
+        madsApp.linkOpener( twurl[ans+language] );
+    });
+    
+    $('.landing-page').on('click', function () {
+        
+        /* Tracker */
+        madsApp.tracker('CTR','site');
+        
+        madsApp.linkOpener( 'http://www.walls.com.my/' );
     });
 
 });

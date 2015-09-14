@@ -213,9 +213,14 @@ body {
   background-color: #fed103;
   background-image: url("../images/shadow.png");
   background-repeat: repeat-x;
-  background-position-y: 96px; }
+  background-position: 0 96px; }
   body.question-body {
-    background-position-y: 288px; }
+    background-position: 0 288px; }
+
+body:after{
+    display:none;
+    content: url(../images/eng-bubble-01.png) url(../images/eng-bubble-02.png) url(../images/eng-bubble-03.png) url(../images/mly-bubble-01.png) url(../images/mly-bubble-02.png) url(../images/mly-bubble-04.png);
+}
 
 .wrapper .absolute {
   position: absolute; }
@@ -278,17 +283,21 @@ body {
 .wrapper .start-frame p {
   width: 100%;
   position: absolute; }
-.wrapper .start-frame p.english {
+.wrapper .start-frame p.english, img.english{
   -webkit-animation: rotateOut 5s infinite linear;
   -moz-animation: rotateOut 5s infinite linear;
   -o-animation: rotateOut 5s infinite linear;
   animation: rotateOut 5s infinite linear; }
-.wrapper .start-frame p.malay {
+.wrapper .start-frame p.malay, img.malay {
   font-size: 15px;
   -webkit-animation: rotateIn 5s infinite linear;
   -moz-animation: rotateIn 5s infinite linear;
   -o-animation: rotateIn 5s infinite linear;
   animation: rotateIn 5s infinite linear; }
+img.english, img.malay {
+    position: absolute;
+    top: 0;
+}
 .wrapper .question-frame {
     position: absolute;
     width: 100%;
