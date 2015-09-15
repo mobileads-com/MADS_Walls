@@ -333,7 +333,7 @@ img.english, img.malay {
     font: 11px "HelveticaNeue", sans-serif;
     color: #333; }
   .wrapper .result-frame .share-box {
-    padding: 15px 0 0;
+    padding: 10px 0 0;
     color: #ef3742; }
     .wrapper .result-frame .share-box p, .wrapper .result-frame .share-box .share-button, .wrapper .result-frame .share-box .facebook, .wrapper .result-frame .share-box .twitter {
       vertical-align: middle;
@@ -363,6 +363,9 @@ img.english, img.malay {
     width: 175px;
     height: 31px;
     margin: 15px 0 0; }
+.wrapper .result-frame .find-button{
+    margin: 10px 0 0;
+}
   .wrapper .result-frame .find-button {
     text-decoration: none;
     display: block; }
