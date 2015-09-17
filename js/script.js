@@ -167,7 +167,7 @@ result['fruttare_bm'] = {
 result['wallscup_bm'] = {
     class: 'walls-cup',
     bubble_text: '<img src="images/mly-bubble-02.png"/>',
-    caption: "ANDA ADALAH AISKIRIM CAWAN WALL'S!",
+    caption: "ANDA ADALAH AISKRIM CAWAN WALL'S!",
     text: "Aiskrim Cawan Wall’s adalah seorang yang tenang, mudah bergaul, tidak mudah terasa hati. Aiskrim Cawan Wall’s adalah seorang yang sangat mudah untuk didekati. Aiskrim Cawan Wall’s sangat selesa, ikhlas, lebih gemar memiliki hanya sedikit rakan karib dan mereka sangat setia. Mereka adalah praktikal, gembira dan manis sama seperti Aiskrim Cawan Wall’s!"
 };
 result['topten_bm'] = {
@@ -218,7 +218,7 @@ fburl['fruttare_bm'] = {
     url : 'http://www.walls.com.my'
 };
 fburl['wallscup_bm'] = {
-    name: "ANDA ADALAH AISKIRIM CAWAN WALL'S!",
+    name: "ANDA ADALAH AISKRIM CAWAN WALL'S!",
     caption: "Aiskrim Cawan Wall’s adalah seorang yang tenang, mudah bergaul, tidak mudah terasa hati. Aiskrim Cawan Wall’s adalah seorang yang sangat mudah untuk didekati. Aiskrim Cawan Wall’s sangat selesa, ikhlas, lebih gemar memiliki hanya sedikit rakan karib dan mereka sangat setia. Mereka adalah praktikal, gembira dan manis sama seperti Aiskrim Cawan Wall’s!",
     image : 'https://rmarepo.richmediaads.com/2754/walls/fb/share_walls_cup_bm.jpg',
     url : 'http://www.walls.com.my'
@@ -241,7 +241,7 @@ twurl['topten_en'] = 'https://twitter.com/intent/tweet?original_referer=http://b
 /* Malay */
 twurl['solero_bm'] = 'https://twitter.com/intent/tweet?original_referer=http://bit.ly/1UKqMpw&text=ANDA ADALAH SOLERO!&tw_p=tweetbutton&url=http://bit.ly/1UKqMpw';
 twurl['fruttare_bm'] = 'https://twitter.com/intent/tweet?original_referer=http://bit.ly/1Q552DF&text=ANDA ADALAH FRUTTARE!&tw_p=tweetbutton&url=http://bit.ly/1Q552DF';
-twurl['wallscup_bm'] = 'https://twitter.com/intent/tweet?original_referer=http://bit.ly/1ER9dlY&text=ANDA ADALAH AISKIRIM CAWAN WALL\'S!&tw_p=tweetbutton&url=http://bit.ly/1ER9dlY';
+twurl['wallscup_bm'] = 'https://twitter.com/intent/tweet?original_referer=http://bit.ly/1ER9dlY&text=ANDA ADALAH AISKRIM CAWAN WALL\'S!&tw_p=tweetbutton&url=http://bit.ly/1ER9dlY';
 twurl['topten_bm'] = 'https://twitter.com/intent/tweet?original_referer=http://bit.ly/1KdZgza&text=ANDA ADALAH TOP TEN!&tw_p=tweetbutton&url=http://bit.ly/1KdZgza';
 
 $(document).ready(function(){
@@ -362,7 +362,7 @@ $(document).ready(function(){
         /* Tracker */
         madsApp.tracker('E','facebook');
         
-        madsApp.linkOpener(  'https://www.facebook.com/dialog/feed?app_id=1168146013199372&display=popup&name='+fburl[ans+language].name+'&caption='+fburl[ans+language].caption+'&link=http%3A%2F%2Fwww.walls.com.my&picture='+fburl[ans+language].image+'&redirect_uri=http%3A%2F%2Fwalls.com.my%2F' );
+        madsApp.linkOpener(  'https://www.facebook.com/dialog/feed?app_id=1168146013199372&display=popup&name='+fburl[ans+language].name+'&caption=www.walls.com.my&description='+fburl[ans+language].caption+'&link=http%3A%2F%2Fwww.walls.com.my&picture='+fburl[ans+language].image+'&redirect_uri=http%3A%2F%2Fwalls.com.my%2F' );
     });
     
     $('.twitter-button').on('click', function () {
@@ -378,7 +378,7 @@ $(document).ready(function(){
         /* Tracker */
         madsApp.tracker('CTR','site');
         
-        madsApp.linkOpener( 'http://www.walls.com.my/' );
+        madsApp.linkOpener( 'http://www.walls.com.my/walls/' );
     });
 
 });
