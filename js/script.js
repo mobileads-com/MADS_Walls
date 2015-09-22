@@ -362,7 +362,7 @@ $(document).ready(function(){
         /* Tracker */
         madsApp.tracker('E','facebook');
         
-        madsApp.linkOpener(  'https://www.facebook.com/dialog/feed?app_id=1168146013199372&display=popup&name='+fburl[ans+language].name+'&caption=www.walls.com.my&description='+fburl[ans+language].caption+'&link=http%3A%2F%2Fwww.walls.com.my&picture='+fburl[ans+language].image+'&redirect_uri=http%3A%2F%2Fwalls.com.my%2F' );
+        madsApp.linkOpener(  'https://www.facebook.com/dialog/feed?app_id=1168146013199372&display=popup&name='+fburl[ans+language].name+'&caption=www.walls.com.my&description='+fburl[ans+language].caption+'&link=http%3A%2F%2Fwalls.com.my%2Fwalls%2F&picture='+fburl[ans+language].image+'&redirect_uri=http%3A%2F%2Fwalls.com.my%2Fwalls%2F' );
     });
     
     $('.twitter-button').on('click', function () {

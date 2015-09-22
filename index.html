@@ -11,11 +11,32 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/custom.css" />
 
-    <meta property="og:url"         content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html" />
-    <meta property="og:type"        content="article" />
-    <meta property="og:title"       content="When Great Minds Don’t Think Alike" />
-    <meta property="og:description" content="How much does culture influence creative thinking?" />
-    <meta property="og:image"       content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
+
+    
+    <script>
+        var custTracker = function () {
+        // This function is anonymous, is executed immediately and 
+        // the return value is assigned to QueryString!
+        var query_string = {};
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i=0;i<vars.length;i++) {
+        var pair = vars[i].split("=");
+        // If first entry with this name
+        if (typeof query_string[pair[0]] === "undefined") {
+        query_string[pair[0]] = pair[1];
+        // If second entry with this name
+        } else if (typeof query_string[pair[0]] === "string") {
+        var arr = [ query_string[pair[0]], pair[1] ];
+        query_string[pair[0]] = arr;
+        // If third or later entry with this name
+        } else {
+        query_string[pair[0]].push(pair[1]);
+        }
+        } 
+        return JSON.parse(decodeURIComponent(query_string.custTracker));
+        } ();
+    </script>
 </head>
 <body>
 
@@ -29,11 +50,13 @@
             <img class="malay" src="images/mly-bubble-05.png"/>
         </div>
         <div class="absolute all-ice-cream"></div>
-        <div class="absolute button-default start-eng-button">
+        <div class="start-eng-button" style=""></div>
+        <div class="absolute button-default start-eng-button-css">
             <p class="english">start quiz in english</p>
             <p class="malay">mula kuis dalam bahasa inggeris</p>
         </div>
-        <div class="absolute button-default start-malay-button">
+        <div class="start-malay-button"></div>
+        <div class="absolute button-default start-malay-button-css">
             <p class="english">start quiz in malay</p>
             <p class="malay">mula kuis dalam bahasa melayu</p>
         </div>
@@ -193,11 +216,11 @@
 
         <div class="result-button-en">
             <div class="button-default try-button">try again</div>
-            <a href="#" target="_blank" class="button-default find-button landing-page">find out more</a>
+            <div class="button-default find-button landing-page">find out more</div>
         </div>
         <div class="result-button-bm">
             <div class="button-default try-button">cuba lagi</div>
-            <a href="#" target="_blank" class="button-default find-button landing-page">ketahui lebih lanjut</a>
+            <div class="button-default find-button landing-page">ketahui lebih lanjut</div>
         </div>
     </div>
 
