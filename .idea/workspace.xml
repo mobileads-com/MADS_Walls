@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f5ffb4b1-2c11-4594-99dc-8d6d13981c6a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/landscape/css/custom.css" afterPath="$PROJECT_DIR$/landscape/css/custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/landscape/js/main.js" afterPath="$PROJECT_DIR$/landscape/js/main.js" />
     </list>
     <ignored path="walls.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/landscape/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="173" column="27" selection-start-line="173" selection-start-column="27" selection-end-line="173" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.32587412">
+              <caret line="234" column="6" selection-start-line="234" selection-start-column="6" selection-end-line="234" selection-end-column="6" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -47,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/landscape/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.18030304">
-              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+            <state vertical-scroll-proportion="-3.4">
+              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -95,8 +95,8 @@
         <option value="$PROJECT_DIR$/landscape/css/style.css" />
         <option value="$PROJECT_DIR$/landscape/js/script.js" />
         <option value="$PROJECT_DIR$/landscape/tpl/index.html" />
-        <option value="$PROJECT_DIR$/landscape/js/main.js" />
         <option value="$PROJECT_DIR$/landscape/css/custom.css" />
+        <option value="$PROJECT_DIR$/landscape/js/main.js" />
       </list>
     </option>
   </component>
@@ -389,7 +389,13 @@
       <option name="project" value="LOCAL" />
       <updated>1448634088321</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="[preload css apply] (Jeff)">
+      <created>1448634729948</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1448634729948</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -433,7 +439,8 @@
     <MESSAGE value="fixed js" />
     <MESSAGE value="landscape over walls" />
     <MESSAGE value="[optimized and clean code] (Jeff)" />
-    <option name="LAST_COMMIT_MESSAGE" value="[optimized and clean code] (Jeff)" />
+    <MESSAGE value="[preload css apply] (Jeff)" />
+    <option name="LAST_COMMIT_MESSAGE" value="[preload css apply] (Jeff)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -627,16 +634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/landscape/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="173" column="27" selection-start-line="173" selection-start-column="27" selection-end-line="173" selection-end-column="27" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/landscape/tpl/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.807693">
@@ -647,9 +644,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/landscape/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18030304">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        <state vertical-scroll-proportion="-3.4">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/landscape/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32587412">
+          <caret line="234" column="6" selection-start-line="234" selection-start-column="6" selection-end-line="234" selection-end-column="6" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

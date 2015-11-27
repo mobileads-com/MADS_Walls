@@ -224,44 +224,44 @@ var walls = function () {
     fburl['fruttare_en'] = {
         name: 'YOU ARE Fruttare!',
         caption: "The Fruttare is a fun-loving, entertaining and optimistic person. Fruttares are receptive and open to others and build relationships quickly. They are animated, excited and accepting of others. It is not unusual to feel as if you have known the Fruttare person for years after only a few minutes, much like the Fruttare, who is a new addition in the Wall's family.",
-        image: image_place + 'fb/share_fruttare_en.jpg',
+        image: image_place + '/fb/share_fruttare_en.jpg',
         url: 'http://www.walls.com.my'
     };
     fburl['wallscup_en'] = {
         name: "YOU ARE Wall's CUP!",
         caption: "The Wall's Cup is a calm, easy-going person. Wall's Cups are by far the easiest person with which to get along. The Wall's Cup communicates a warm, sincere interest in others preferring to have just a few close friends whom they are very loyal to. They are practical, happy and sweet, just like Wall's Cup!",
-        image: image_place + 'fb/share_walls_cup_en.jpg',
+        image: image_place + '/fb/share_walls_cup_en.jpg',
         url: 'http://www.walls.com.my'
     };
     fburl['topten_en'] = {
         name: "YOU ARE Top Ten!",
         caption: "The Top Ten is well organized; on occasion you may find a Top Ten that keeps things cluttered, however, they know where everything is. The Top Ten is determined to make the right and best decision. If they make a promise the Top Ten will keep it. Top Tens are creative (and sometimes nutty) people. Top Tens can be hard as chocolate on the outside, but soft like vanilla ice cream on the inside.",
-        image: image_place + 'fb/share_top_ten.jpg',
+        image: image_place + '/fb/share_top_ten.jpg',
         url: 'http://www.walls.com.my'
     };
     /* Malay */
     fburl['solero_bm'] = {
         name: 'ANDA ADALAH SOLERO!',
         caption: 'Solero adalah seorang yang mudah menyesuaikan diri, berfikiran pantas, praktikal, yakin diri dan berfikiran terbuka. Mereka penuh dengan idea dan mudah membuat keputusan untuk diri sendiri dan orang lain. Mereka seperti lapisan limau yang menarik di luar Solero. Tetapi pada sudut lain, mereka adalah seorang yang praktikal seperti lapisan teras vanilla yang lazat pada Solero.',
-        image: image_place + 'fb/share_solero.jpg',
+        image: image_place + '/fb/share_solero.jpg',
         url: 'http://www.walls.com.my'
     };
     fburl['fruttare_bm'] = {
         name: 'ANDA ADALAH FRUTTARE!',
         caption: "Fruttare adalah seorang yang suka berseronok, banyak aktiviti, mudah mempengaruhi orang lain, berkeyakinan tinggi, peramah dan mudah tersenyum. Tidaklah janggal sekiranya anda berasa seolah–olah telah lama mengenali seorang Fruttare walaupun hanya berjumpa dengannya beberapa minit sahaja. Inilah kelebihan Fruttare, ahli baru di dalam keluarga Wall’s.",
-        image: image_place + 'fb/share_fruttare_bm.jpg',
+        image: image_place + '/fb/share_fruttare_bm.jpg',
         url: 'http://www.walls.com.my'
     };
     fburl['wallscup_bm'] = {
         name: "ANDA ADALAH AISKRIM CAWAN WALL'S!",
         caption: "Aiskrim Cawan Wall’s adalah seorang yang tenang, mudah bergaul, tidak mudah terasa hati. Aiskrim Cawan Wall’s adalah seorang yang sangat mudah untuk didekati. Aiskrim Cawan Wall’s sangat selesa, ikhlas, lebih gemar memiliki hanya sedikit rakan karib dan mereka sangat setia. Mereka adalah praktikal, gembira dan manis sama seperti Aiskrim Cawan Wall’s!",
-        image: image_place + 'fb/share_walls_cup_bm.jpg',
+        image: image_place + '/fb/share_walls_cup_bm.jpg',
         url: 'http://www.walls.com.my'
     };
     fburl['topten_bm'] = {
         name: "ANDA ADALAH TOP TEN!",
         caption: "Top Ten adalah seorang yang sangat teratur, bersungguh-sungguh dalam membuat keputusan dan menepati janji. Top Ten adalah seorang yang sangat kreatif (dan gila–gila) dan setia kepada keluarga serta rakan-rakan. Top Ten boleh menjadi keras seperti coklat di luar, tetapi lembut seperti aiskrim vanilla di dalamnya.",
-        image: image_place + 'fb/share_top_ten.jpg',
+        image: image_place + '/fb/share_top_ten.jpg',
         url: 'http://www.walls.com.my'
     };
 
