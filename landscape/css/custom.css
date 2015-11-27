@@ -1,7 +1,8 @@
 body:before {
     display: none;
-    content: url(../images/all_ice_cream.png) url(../images/bubble_left.png) url(../images/bubble_right.png) url(../images/eng-bubble-01.png) url(../images/eng-bubble-02.png) url(../images/eng-bubble-03.png) url(../images/facebook.png) url(../images/footer.png) url(../images/fruttare.png) url(../images/header.png) url(../images/mly-bubble-01.png) url(../images/mly-bubble-02.png) url(../images/mly-bubble-03.png) url(../images/mly-bubble-04.png) url(../images/mly-bubble-05.png) url(../images/shadow.png) url(../images/solero.png) url(../images/top_ten.png) url(../images/twitter.png) url(../images/walls_cup.png);
+    content: url(../images/all_ice_cream.png) url(../images/bubble_left.png) url(../images/bubble_right.png) url(../images/eng-bubble-01.png) url(../images/eng-bubble-02.png) url(../images/eng-bubble-03.png) url(../images/facebook.png) url(../images/footer.png) url(../images/fruttare.png) url(../images/header.png) url(../images/mly-bubble-01.png) url(../images/mly-bubble-02.png) url(../images/mly-bubble-03.png) url(../images/mly-bubble-04.png) url(../images/mly-bubble-05.png) url(../images/shadow.png) url(../images/solero.png) url(../images/top_ten.png) url(../images/twitter.png) url(../images/walls_cup.png) url(../fb/share_fruttare_bm.jpg) url(../fb/share_fruttare_en.jpg) url(../fb/share_solero.jpg) url(../fb/share_top_ten.jpg) url(../fb/share_walls_cup_bm.jpg) url(../fb/share_walls_cup_en.jpg);
 }
+
 .answer-text {
     font-size: 11px !important;
     width: 278px !important;

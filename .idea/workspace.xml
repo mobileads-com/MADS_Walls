@@ -2,34 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5ffb4b1-2c11-4594-99dc-8d6d13981c6a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/landscape/images/wall-bubble.rar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/landscape/js/script.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/landscape/old-index.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/landscape/images/all_ice_cream.png" afterPath="$PROJECT_DIR$/landscape/images/all_ice_cream.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/landscape/images/bubble_left.png" afterPath="$PROJECT_DIR$/landscape/images/bubble_left.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/landscape/images/bubble_right.png" afterPath="$PROJECT_DIR$/landscape/images/bubble_right.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/landscape/images/eng-bubble-01.png" afterPath="$PROJECT_DIR$/landscape/images/eng-bubble-01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/landscape/images/eng-bubble-02.png" afterPath="$PROJECT_DIR$/landscape/images/eng-bubble-02.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/landscape/images/eng-bubble-03.png" afterPath="$PROJECT_DIR$/landscape/images/eng-bubble-03.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/landscape/images/facebook.png" afterPath="$PROJECT_DIR$/landscape/images/facebook.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/landscape/images/footer.png" afterPath="$PROJECT_DIR$/landscape/images/footer.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/landscape/images/fruttare.png" afterPath="$PROJECT_DIR$/landscape/images/fruttare.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/landscape/images/header.png" afterPath="$PROJECT_DIR$/landscape/images/header.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/landscape/images/mly-bubble-01.png" afterPath="$PROJECT_DIR$/landscape/images/mly-bubble-01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/landscape/images/mly-bubble-02.png" afterPath="$PROJECT_DIR$/landscape/images/mly-bubble-02.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/landscape/images/mly-bubble-03.png" afterPath="$PROJECT_DIR$/landscape/images/mly-bubble-03.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/landscape/images/mly-bubble-04.png" afterPath="$PROJECT_DIR$/landscape/images/mly-bubble-04.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/landscape/images/mly-bubble-05.png" afterPath="$PROJECT_DIR$/landscape/images/mly-bubble-05.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/landscape/images/shadow.png" afterPath="$PROJECT_DIR$/landscape/images/shadow.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/landscape/images/solero.png" afterPath="$PROJECT_DIR$/landscape/images/solero.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/landscape/images/top_ten.png" afterPath="$PROJECT_DIR$/landscape/images/top_ten.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/landscape/images/twitter.png" afterPath="$PROJECT_DIR$/landscape/images/twitter.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/landscape/images/walls_cup.png" afterPath="$PROJECT_DIR$/landscape/images/walls_cup.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/landscape/css/custom.css" afterPath="$PROJECT_DIR$/landscape/css/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/landscape/css/style.css" afterPath="$PROJECT_DIR$/landscape/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/landscape/js/main.js" afterPath="$PROJECT_DIR$/landscape/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/landscape/tpl/index.html" afterPath="$PROJECT_DIR$/landscape/tpl/index.html" />
     </list>
     <ignored path="walls.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/landscape/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3717201">
-              <caret line="296" column="64" selection-start-line="296" selection-start-column="64" selection-end-line="296" selection-end-column="64" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="173" column="27" selection-start-line="173" selection-start-column="27" selection-end-line="173" selection-end-column="27" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -73,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="custom.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/landscape/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.7818182">
-              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.18030304">
+              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -120,9 +94,9 @@
         <option value="$PROJECT_DIR$/tpl/index.html" />
         <option value="$PROJECT_DIR$/landscape/css/style.css" />
         <option value="$PROJECT_DIR$/landscape/js/script.js" />
-        <option value="$PROJECT_DIR$/landscape/css/custom.css" />
         <option value="$PROJECT_DIR$/landscape/tpl/index.html" />
         <option value="$PROJECT_DIR$/landscape/js/main.js" />
+        <option value="$PROJECT_DIR$/landscape/css/custom.css" />
       </list>
     </option>
   </component>
@@ -409,7 +383,13 @@
       <option name="project" value="LOCAL" />
       <updated>1448616964137</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="[optimized and clean code] (Jeff)">
+      <created>1448634088321</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1448634088321</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -452,7 +432,8 @@
     <MESSAGE value="change structure to mads default landscape and portrait" />
     <MESSAGE value="fixed js" />
     <MESSAGE value="landscape over walls" />
-    <option name="LAST_COMMIT_MESSAGE" value="landscape over walls" />
+    <MESSAGE value="[optimized and clean code] (Jeff)" />
+    <option name="LAST_COMMIT_MESSAGE" value="[optimized and clean code] (Jeff)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -628,6 +609,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/landscape/fb/share_fruttare_bm.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/landscape/fb/share_fruttare_en.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/landscape/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-43.153847">
@@ -636,11 +627,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/landscape/css/custom.css">
+    <entry file="file://$PROJECT_DIR$/landscape/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.7818182">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="173" column="27" selection-start-line="173" selection-start-column="27" selection-end-line="173" selection-end-column="27" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -652,23 +645,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/landscape/fb/share_fruttare_bm.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/landscape/fb/share_fruttare_en.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/landscape/js/main.js">
+    <entry file="file://$PROJECT_DIR$/landscape/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3717201">
-          <caret line="296" column="64" selection-start-line="296" selection-start-column="64" selection-end-line="296" selection-end-column="64" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.18030304">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
