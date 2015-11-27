@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>What's your ice-cream personality?</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+
+
+    
+    <script>
+        var custTracker = function () {
+        // This function is anonymous, is executed immediately and 
+        // the return value is assigned to QueryString!
+        var query_string = {};
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i=0;i<vars.length;i++) {
+        var pair = vars[i].split("=");
+        // If first entry with this name
+        if (typeof query_string[pair[0]] === "undefined") {
+        query_string[pair[0]] = pair[1];
+        // If second entry with this name
+        } else if (typeof query_string[pair[0]] === "string") {
+        var arr = [ query_string[pair[0]], pair[1] ];
+        query_string[pair[0]] = arr;
+        // If third or later entry with this name
+        } else {
+        query_string[pair[0]].push(pair[1]);
+        }
+        } 
+        return JSON.parse(decodeURIComponent(query_string.custTracker));
+        } ();
+    </script>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="absolute header"></div>
+
+
+    <div class="start-frame">
+        <div class="absolute bubble-right">
+            <img class="english" src="images/eng-bubble-03.png"/>
+            <img class="malay" src="images/mly-bubble-05.png"/>
+        </div>
+        <div class="absolute all-ice-cream"></div>
+        <div class="start-eng-button" style=""></div>
+        <div class="absolute button-default start-eng-button-css">
+            <p class="english">start quiz in english</p>
+            <p class="malay">mula kuis dalam bahasa inggeris</p>
+        </div>
+        <div class="start-malay-button"></div>
+        <div class="absolute button-default start-malay-button-css">
+            <p class="english">start quiz in malay</p>
+            <p class="malay">mula kuis dalam bahasa melayu</p>
+        </div>
+    </div>
+
+
+
+    <div class="english-questions">
+        <div class="frame-2 question-frame">
+            <div class="question-box">
+                <div class="question-text">There's a party tonight, what do you wear?</div>
+                <div class="answer-text button-default" data-answer="solero" >The new thing you just bought</div>
+                <div class="answer-text button-default" data-answer="topten" >Keep it simple, jeans and a top</div>
+                <div class="answer-text button-default" data-answer="wallscup" >Relaxation over looks! Something easy and comfortable</div>
+                <div class="answer-text button-default" data-answer="fruttare" >A funky sweater and jeans, vintage and unusual</div>
+            </div>
+        </div>
+
+        <div class="frame-3 question-frame">
+            <div class="question-box">
+                <div class="question-text">What do you like most about yourself?</div>
+                <div class="answer-text button-default" data-answer="solero" >Your independence</div>
+                <div class="answer-text button-default" data-answer="wallscup" >Your compassion</div>
+                <div class="answer-text button-default" data-answer="topten" >Your loyalty</div>
+                <div class="answer-text button-default" data-answer="fruttare" >Your spontaneity</div>
+            </div>
+        </div>
+
+        <div class="frame-4 question-frame">
+            <div class="question-box">
+                <div class="question-text">Happy birthday! Your ideal party is…</div>
+                <div class="answer-text button-default" data-answer="solero" >A surprise party!</div>
+                <div class="answer-text button-default" data-answer="topten" >Anything fun, as long as you get to plan it</div>
+                <div class="answer-text button-default" data-answer="wallscup" >A pool, beach, or dance party: Lots of people, loud music</div>
+                <div class="answer-text button-default" data-answer="fruttare" >Your closest friends, out to a coffee shop, then to a spa</div>
+            </div>
+        </div>
+
+        <div class="frame-5 question-frame">
+            <div class="question-box">
+                <div class="question-text">You walk into a party full of people. You usually…</div>
+                <div class="answer-text button-default" data-answer="wallscup" >…find people you know well and who share your interests</div>
+                <div class="answer-text button-default" data-answer="solero" >…find one person and converse or organize a big game for all to play</div>
+                <div class="answer-text button-default" data-answer="topten" >…wait for others to come to you</div>
+                <div class="answer-text button-default" data-answer="fruttare" >…find the largest group of people and become the center of the conversation</div>
+            </div>
+        </div>
+
+        <div class="frame-6 question-frame">
+            <div class="question-box">
+                <div class="question-text">How would your friends describe you?</div>
+                <div class="answer-text button-default" data-answer="wallscup" >Easy-going</div>
+                <div class="answer-text button-default" data-answer="fruttare" >Charismatic and fun</div>
+                <div class="answer-text button-default" data-answer="topten" >Sensitive</div>
+                <div class="answer-text button-default" data-answer="solero" >The leader of the group</div>
+            </div>
+        </div>
+
+        <div class="frame-7 question-frame">
+            <div class="question-box">
+                <div class="question-text">You can take a vacation to one of these places, which one is most appealing?</div>
+                <div class="answer-text button-default" data-answer="solero" >A trek through Taman Negara. Bring on the adventure!</div>
+                <div class="answer-text button-default" data-answer="topten" >Cameron Highlands. A place of solitude and peace</div>
+                <div class="answer-text button-default" data-answer="wallscup" >Perhaps a spa or Redang beach. A relaxing getaway</div>
+                <div class="answer-text button-default" data-answer="fruttare" >Kuala Lumpur. Let's see the sights, taste the cuisine, I just hope I can fit it all in during one trip!</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="malay-questions">
+        <div class="frame-2 question-frame">
+            <div class="question-box">
+                <div class="question-text">Ada parti malam ini, apa anda nak pakai?</div>
+                <div class="answer-text button-default" data-answer="solero" >Pakaian yang anda baru beli</div>
+                <div class="answer-text button-default" data-answer="topten" >Pakai sahaja jeans dan baju yang ringkas</div>
+                <div class="answer-text button-default" data-answer="wallscup" >Pakaian yang senang dan santai asalkan selesa walaupun kelihatan biasa</div>
+                <div class="answer-text button-default" data-answer="fruttare" >Pakaian yang ganjil dan pelik; jeans serta baju yang ranggi</div>
+            </div>
+        </div>
+
+        <div class="frame-3 question-frame">
+            <div class="question-box">
+                <div class="question-text">Apakah yang paling anda suka tentang diri anda?</div>
+                <div class="answer-text button-default" data-answer="solero" >Kebebasan anda</div>
+                <div class="answer-text button-default" data-answer="wallscup" >Sikap belas kasihan anda</div>
+                <div class="answer-text button-default" data-answer="topten" >Kesetiaan anda</div>
+                <div class="answer-text button-default" data-answer="fruttare" >Sikap spontan anda</div>
+            </div>
+        </div>
+
+        <div class="frame-4 question-frame">
+            <div class="question-box">
+                <div class="question-text">Selamat hari lahir! Parti Parti idaman anda ialah…</div>
+                <div class="answer-text button-default" data-answer="solero" >Parti kejutan</div>
+                <div class="answer-text button-default" data-answer="topten" >Apa sahaja yang menarik, asalkan anda dapat merancangnya</div>
+                <div class="answer-text button-default" data-answer="wallscup" >Parti di kolam, pantai atau parti tari menari: Ramai orang dengan muzik yang kuat</div>
+                <div class="answer-text button-default" data-answer="fruttare" >Keluar minum kopi dan ke spa dengan kawan anda yang paling rapat</div>
+            </div>
+        </div>
+
+        <div class="frame-5 question-frame">
+            <div class="question-box">
+                <div class="question-text">Anda pergi ke parti yang penuh dengan orang. Anda biasanya…</div>
+                <div class="answer-text button-default" data-answer="wallscup" >…mencari seseorang yang anda sangat kenal dan mempunyai minat yang sama</div>
+                <div class="answer-text button-default" data-answer="solero" >…cari seseorang untuk berbual atau merancang permainan yang hebat untuk semua</div>
+                <div class="answer-text button-default" data-answer="topten" >…tunggu sehingga orang lain datang kepada anda</div>
+                <div class="answer-text button-default" data-answer="fruttare" >…mencari satu kumpulan yang paling besar dan anda mengawal perbualan</div>
+            </div>
+        </div>
+
+        <div class="frame-6 question-frame">
+            <div class="question-box">
+                <div class="question-text">Bagaimana rakan–rakan anda menggambarkan anda?</div>
+                <div class="answer-text button-default" data-answer="wallscup" >Mudah bergaul</div>
+                <div class="answer-text button-default" data-answer="fruttare" >Berkarisma dan menyeronokkan</div>
+                <div class="answer-text button-default" data-answer="topten" >Sensitif</div>
+                <div class="answer-text button-default" data-answer="solero" >Ketua kumpulan</div>
+            </div>
+        </div>
+
+        <div class="frame-7 question-frame">
+            <div class="question-box">
+                <div class="question-text">anda berPeluang melancong ke salah satu dari tempat–tempat berikut, yang mana satukah yang paling menarik?</div>
+                <div class="answer-text button-default" data-answer="solero" >Menjelajah Taman Negara. Hayatilah pengembaraannya!</div>
+                <div class="answer-text button-default" data-answer="topten" >Cameron Highlands. Tempat yang sungi dan tenang</div>
+                <div class="answer-text button-default" data-answer="wallscup" >Mungkin spa atau pulau Redang. Percutian yang menenangkan</div>
+                <div class="answer-text button-default" data-answer="fruttare" >Kuala Lumpur. Pemandangan yang indah serta makanan yang lazat</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="result-frame" id="result-frame">
+        <div id="result-bubble-text" class="absolute bubble-left">
+            
+        </div>
+        <div class="absolute result-ice-cream"></div>
+
+        <div class="result-text">
+            <div class="caption" id="result-caption"></div>
+            <p class="text" id="result-text"></p>
+        </div>
+
+        <div class="share-box">
+            <p>share</p>
+            <a href="#" class="button-default share-button facebook-button"><span class="facebook"></span></a>
+            <a href="#" class="button-default share-button twitter-button"><span class="twitter"></span></a>
+        </div>
+
+        <div class="result-button-en">
+            <div class="button-default try-button">try again</div>
+            <div class="button-default find-button landing-page">find out more</div>
+        </div>
+        <div class="result-button-bm">
+            <div class="button-default try-button">cuba lagi</div>
+            <div class="button-default find-button landing-page">ketahui lebih lanjut</div>
+        </div>
+    </div>
+
+
+    <div class="absolute footer"></div>
+</div>
+
+
+<!-- jQuery library -->
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

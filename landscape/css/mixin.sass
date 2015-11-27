@@ -1,0 +1,29 @@
+$stick: 'StickARound', sans-serif
+$helvetica: 'HelveticaNeue', sans-serif
+$helvetica-light: 'HelveticaNeue-Light', sans-serif
+
+=box-shadow($value)
+  -webkit-box-shadow: $value
+  box-shadow: $value
+
+=transform($value)
+  -webkit-transform: $value
+  -moz-transform: $value
+  transform: $value
+  -o-transform: $value
+
+@mixin keyframes($animation-name)
+  @-webkit-keyframes #{$animation-name}
+    @content
+  @-moz-keyframes #{$animation-name}
+    @content
+  @-o-keyframes #{$animation-name}
+    @content
+  @keyframes #{$animation-name}
+    @content
+
+=animation($str)
+  -webkit-animation: #{$str}
+  -moz-animation: #{$str}
+  -o-animation: #{$str}
+  animation: #{$str}

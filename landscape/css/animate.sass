@@ -1,0 +1,38 @@
+@import "mixin"
+
++keyframes(rotate-eng-frame)
+  0%
+    -webkit-transform: translateX(0)
+  25%
+    -webkit-transform: translateX(0)
+  35%, 50%, 65%
+    -webkit-transform: translateX(-320px)
+  75%
+    -webkit-transform: translateX(0px)
+  100%
+    -webkit-transform: translateX(0px)
+
++keyframes(rotate-malay-frame)
+  0%
+    -webkit-transform: translateX(320px)
+  25%
+    -webkit-transform: translateX(320px)
+  35%, 50%, 65%
+    -webkit-transform: translateX(0)
+  75%
+    -webkit-transform: translateX(320px)
+  100%
+    -webkit-transform: translateX(320px)
+
+
++keyframes(fadeIn)
+  0%
+    opacity: 0
+  100%
+    opacity: 100
+
++keyframes(fadeOut)
+  0%
+    opacity: 100
+  100%
+    opacity: 0
