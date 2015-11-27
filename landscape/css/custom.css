@@ -14,7 +14,7 @@ body:before {
 
 .tracer {
     background: url(../images/walls-landscape-h.jpg);
-    opacity: 0.5;
+    display: none;
     position: absolute;
     left: 0;
     top: 0;
