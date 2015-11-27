@@ -329,6 +329,7 @@ a {
     background-repeat: no-repeat;
     top: 0;
     left: 21px;
+    z-index: 4;
 }
 
 .wrapper .button-default {
@@ -353,8 +354,8 @@ a {
     background-image: url("../images/footer.png");
     background-size: contain;
     background-repeat: no-repeat;
-    bottom: 9px;
-    right: 28px;
+    bottom: 2px;
+    right: 29px;
 }
 
 .wrapper .start-frame .bubble-right {
@@ -374,12 +375,12 @@ a {
 }
 
 .wrapper .start-frame .all-ice-cream {
-    width: 189px;
+    width: 190px;
     height: 293px;
     background-image: url("../images/all_ice_cream.png");
     background-repeat: no-repeat;
     background-size: contain;
-    top: 85px;
+    top: 78px;
     left: 27px;
 }
 
@@ -472,12 +473,12 @@ img.english, img.malay {
 .wrapper .result-frame .result-button-en, .wrapper .result-frame .result-button-bm {
     position: absolute;
     right: 10px;
-    top: 70px;
+    top: 72px;
 }
 
 .wrapper .result-frame {
     display: none;
-    padding: 200px 20px 0;
+    padding: 186px 24px 0;
 }
 
 .wrapper .result-frame .bubble-left {
@@ -584,7 +585,7 @@ img.english, img.malay {
     height: 138px;
     background-image: url("../images/solero.png");
     background-repeat: no-repeat;
-    top: 50px;
+    top: 34px;
     left: 175px;
 }
 
@@ -603,7 +604,7 @@ img.english, img.malay {
     height: 160px;
     background-image: url("../images/fruttare.png");
     background-repeat: no-repeat;
-    top: 28px;
+    top: 12px;
     left: 199px;
 }
 
@@ -622,7 +623,7 @@ img.english, img.malay {
     height: 143px;
     background-image: url("../images/top_ten.png");
     background-repeat: no-repeat;
-    top: 45px;
+    top: 29px;
     left: 175px;
 }
 
@@ -641,7 +642,7 @@ img.english, img.malay {
     height: 119px;
     background-image: url("../images/walls_cup.png");
     background-repeat: no-repeat;
-    top: 69px;
+    top: 53px;
     left: 175px;
 }
 
