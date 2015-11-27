@@ -24,7 +24,7 @@ var mads = function () {
     this.tracked = [];
 
     /* Body Tag */
-    this.bodyTag = document.getElementsByTagName('body')[0];
+    this.bodyTag = document.getElementsByTagName('.wrapper')[0];
 
     /* Head Tag */
     this.headTag = document.getElementsByTagName('head')[0];
@@ -276,7 +276,7 @@ var walls = function () {
     twurl['wallscup_bm'] = 'https://twitter.com/intent/tweet?original_referer=http://bit.ly/1ER9dlY&text=ANDA ADALAH AISKRIM CAWAN WALL\'S!&tw_p=tweetbutton&url=http://bit.ly/1ER9dlY';
     twurl['topten_bm'] = 'https://twitter.com/intent/tweet?original_referer=http://bit.ly/1KdZgza&text=ANDA ADALAH TOP TEN!&tw_p=tweetbutton&url=http://bit.ly/1KdZgza';
 
-    app.loadJs('https://code.jquery.com/jquery-1.11.3.min.js', function () {
+    app.loadJs('js/jquery-1.11.3.min.js', function () {
         if (typeof window.jQuery != 'undefined') {
             (function ($) {
                 $(app.contentTag).load('tpl/index.html', function () {
@@ -291,7 +291,7 @@ var walls = function () {
                         $('.frame-2').show();
                         $('.result-button-bm').hide();
                         $('.result-button-en').show();
-                        $('body').addClass('question-body');
+                        $('.wrapper').addClass('question-body');
                     });
 
 
@@ -307,7 +307,7 @@ var walls = function () {
                         $('.frame-2').show();
                         $('.result-button-en').hide();
                         $('.result-button-bm').show();
-                        $('body').addClass('question-body');
+                        $('.wrapper').addClass('question-body');
 
                     });
 
@@ -330,7 +330,7 @@ var walls = function () {
 
                         if (answers.length == 6) {
                             $(parent).hide();
-                            $('body').removeClass('question-body');
+                            $('.wrapper').removeClass('question-body');
                             $('.result-frame').show();
 
                             if (solero > topten && solero > wallscup && solero > fruttare) {

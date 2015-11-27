@@ -12,10 +12,33 @@ body:before {
     width: 278px !important;
 }
 
-body, .question-body, .wrapper {
-    width: 320px;
-    height: 480px;
+.tracer {
+    background: url(../images/walls-landscape-h.jpg);
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 480px;
+    height: 320px;
+}
+
+.wrapper {
+    font: 18px "StickARound", sans-serif;
+    background-color: #fed103;
+    background-image: url("../images/shadow.png");
+    background-repeat: repeat-x;
+    background-position: 0 96px;
+}
+
+.wrapper.question-body {
+    background-position: 0 288px;
+}
+
+#rma-widget, .question-body, .wrapper {
+    width: 480px;
+    height: 320px;
     position: relative;
+
 }
 
 .animated {
