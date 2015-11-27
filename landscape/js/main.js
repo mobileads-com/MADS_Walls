@@ -24,7 +24,7 @@ var mads = function () {
     this.tracked = [];
 
     /* Body Tag */
-    this.bodyTag = document.getElementsByTagName('.wrapper')[0];
+    this.bodyTag = document.getElementsByTagName('body')[0];
 
     /* Head Tag */
     this.headTag = document.getElementsByTagName('head')[0];
@@ -51,7 +51,7 @@ mads.prototype.linkOpener = function (url) {
             window.open(url);
         }
     }
-}
+};
 
 /* tracker */
 mads.prototype.tracker = function (tt, type, name, value) {
@@ -73,7 +73,7 @@ mads.prototype.tracker = function (tt, type, name, value) {
             /* Insert Macro */
             var src = this.custTracker[i].replace('{{type}}', type);
             src = src.replace('{{tt}}', tt);
-            src = src.replace('{{value}}', value);
+            //src = src.replace('{{value}}', value);
             /* */
             img.src = src + '&' + this.id;
 
