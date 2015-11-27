@@ -390,6 +390,7 @@ var walls = function () {
 
                         $('.result-frame').hide();
                         $('.start-frame').show();
+                        $('.wrapper').removeClass('lastframe');
                     });
 
                     $('.facebook-button').on('click', function () {

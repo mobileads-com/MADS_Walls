@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f5ffb4b1-2c11-4594-99dc-8d6d13981c6a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/landscape/css/style.css" afterPath="$PROJECT_DIR$/landscape/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/landscape/js/main.js" afterPath="$PROJECT_DIR$/landscape/js/main.js" />
     </list>
     <ignored path="walls.iws" />
@@ -25,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/landscape/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32587412">
-              <caret line="234" column="6" selection-start-line="234" selection-start-column="6" selection-end-line="234" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -37,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/landscape/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-43.153847">
-              <caret line="66" column="34" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.17878787">
+              <caret line="403" column="23" selection-start-line="403" selection-start-column="23" selection-end-line="403" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -50,8 +51,8 @@
       <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/landscape/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.4">
-              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+            <state vertical-scroll-proportion="-2.4727273">
+              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -92,11 +93,11 @@
         <option value="$PROJECT_DIR$/css/custom.css" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/tpl/index.html" />
-        <option value="$PROJECT_DIR$/landscape/css/style.css" />
         <option value="$PROJECT_DIR$/landscape/js/script.js" />
         <option value="$PROJECT_DIR$/landscape/tpl/index.html" />
         <option value="$PROJECT_DIR$/landscape/css/custom.css" />
         <option value="$PROJECT_DIR$/landscape/js/main.js" />
+        <option value="$PROJECT_DIR$/landscape/css/style.css" />
       </list>
     </option>
   </component>
@@ -286,7 +287,7 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/portrait/index.html" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
@@ -300,7 +301,7 @@
       <recent name="C:\OpenServer\domains\walls\css" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.Walls Custom Ad">
+  <component name="RunManager" selected="JavaScript Debug.Walls Custom Ad Landscape">
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
@@ -325,15 +326,19 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="Walls Custom Ad" type="JavascriptDebugType" factoryName="JavaScript Debug" uri="http://localhost:8090/walls/landscape/index.html">
+    <configuration default="false" name="Walls Custom Ad Landscape" type="JavascriptDebugType" factoryName="JavaScript Debug" uri="http://localhost:8090/walls/landscape/index.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="Walls Custom Ad Portrait" type="JavascriptDebugType" factoryName="JavaScript Debug" uri="http://localhost:8090/walls/portrait/index.html">
       <method />
     </configuration>
     <configuration default="false" name="MobileWeb" type="JavascriptDebugType" factoryName="JavaScript Debug" uri="http://localhost:8090/walls/landscape/mw.html">
       <method />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.Walls Custom Ad" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.MobileWeb" />
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.Walls Custom Ad Landscape" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.Walls Custom Ad Portrait" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.MobileWeb" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -395,7 +400,13 @@
       <option name="project" value="LOCAL" />
       <updated>1448634729948</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="[fix on fb share] (Jeff)">
+      <created>1448636072101</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1448636072101</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -440,7 +451,8 @@
     <MESSAGE value="landscape over walls" />
     <MESSAGE value="[optimized and clean code] (Jeff)" />
     <MESSAGE value="[preload css apply] (Jeff)" />
-    <option name="LAST_COMMIT_MESSAGE" value="[preload css apply] (Jeff)" />
+    <MESSAGE value="[fix on fb share] (Jeff)" />
+    <option name="LAST_COMMIT_MESSAGE" value="[fix on fb share] (Jeff)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -626,14 +638,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/landscape/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-43.153847">
-          <caret line="66" column="34" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/landscape/tpl/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.807693">
@@ -642,21 +646,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/landscape/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/landscape/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.4">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        <state vertical-scroll-proportion="-2.4727273">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/landscape/js/main.js">
+    <entry file="file://$PROJECT_DIR$/landscape/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32587412">
-          <caret line="234" column="6" selection-start-line="234" selection-start-column="6" selection-end-line="234" selection-end-column="6" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.17878787">
+          <caret line="403" column="23" selection-start-line="403" selection-start-column="23" selection-end-line="403" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
